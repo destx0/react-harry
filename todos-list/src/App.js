@@ -5,11 +5,21 @@ import {Footer} from "./MyComponents/Footer";
 import {Todos} from "./MyComponents/Todos";
 
 function App() {
-  let myVariable = 33;
+  let todos = [
+    {sno: 1,
+    title:"go to market",
+    desc: "please go"},
+    {sno: 2,
+    title:"go to market",
+    desc: "please go"},
+    {sno: 3,
+    title:"go to market",
+    desc: "please go"}  
+  ];
   return (
     <>
       <Header title="toapp" searchBar = {false} />
-      <Todos />
+      <Todos todos={todos} />
       <Footer />
     </>
   );
