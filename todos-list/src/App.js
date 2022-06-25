@@ -5,16 +5,19 @@ import {Footer} from "./MyComponents/Footer";
 import {Todos} from "./MyComponents/Todos";
 
 function App() {
+  const onDelete = ()=>{
+    console.log("onDelete")
+  };
   let todos = [
-    {sno: 1,
+    {sno: 10,
     title:"go to market",
     desc: "please go"},
-    {sno: 2,
-    title:"go to market",
-    desc: "please go"},
-    {sno: 3,
-    title:"go to market",
-    desc: "please go"}  
+    {sno: 20,
+    title:"go to market2",
+    desc: "please godgffs"},
+    {sno: 30,
+    title:"go to market3",
+    desc: "please godfg"}  
   ];
   return (
     <>
