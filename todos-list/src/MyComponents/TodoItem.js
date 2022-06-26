@@ -7,7 +7,7 @@ export default function TodoItem({todo, onDelete}) {
     <div>
         <h1>{todo.title}</h1>
         <h4>{todo.desc}</h4>
-        <button className="btn-sm btn btn-danger" onClick={onDelete}>delete</button>
+        <button className="btn-sm btn btn-danger" onClick={() => onDelete(todo)}>delete</button>
     </div>
   )
 }
